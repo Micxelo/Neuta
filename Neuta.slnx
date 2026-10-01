@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="Neuta.Protocol/Neuta.Protocol.csproj" />
+</Solution>
