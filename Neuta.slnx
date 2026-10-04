@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Neuta.Agent/Neuta.Agent.csproj" />
+  <Project Path="Neuta.Config/Neuta.Config.csproj" />
   <Project Path="Neuta.Protocol/Neuta.Protocol.csproj" />
 </Solution>
