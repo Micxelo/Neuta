@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="Neuta.Protocol/Neuta.Protocol.csproj" Id="16e6e1ad-2b1c-4eaa-a863-33e3f64b254c" />
   <Project Path="Neuta.Agent/Neuta.Agent.csproj" Id="e77c4943-2987-4f50-90a2-2a55a35e41f1" />
 </Solution>
