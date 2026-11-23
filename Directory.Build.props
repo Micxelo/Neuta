@@ -1,5 +1,13 @@
 <Project>
   <PropertyGroup>
+    <Author>Micxelo</Author>
+    <Copyright>Copyright © 2026 Neuta Project</Copyright>
+
+    <Version>0.1.0-alpha.1</Version>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <InformationalVersion>$(Version)</InformationalVersion>
+
     <UseArtifactsOutput>true</UseArtifactsOutput>
 	 <ArtifactsPath>$(MSBuildThisFileDirectory).artifacts</ArtifactsPath>
   </PropertyGroup>
