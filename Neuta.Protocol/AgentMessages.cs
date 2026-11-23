@@ -57,8 +57,8 @@ public sealed record ConfigureBackendResult(
     IReadOnlyList<JobOperation> Operations,
     IReadOnlyDictionary<string, string> OptionMappings,
     int? Port = null,                                           // 12345, normally
-    IReadOnlyDictionary<string, string>? ClientOptions = null,  // Used on Windows to pass options to the backend executable.
-    IReadOnlyDictionary<string, string>? ExtraOptions = null);  // Other options listed in the backend's --help output, but not used by the protocol.
+    IReadOnlyDictionary<string, string>? ClientOptions = null,  // Client options used by the reference integration.
+    IReadOnlyDictionary<string, string>? ExtraOptions = null);  // Additional flags supported by the Tau client.
 
 public sealed record SubmitResult(bool Accepted);
 
@@ -155,6 +155,20 @@ public sealed record ProtocolError(
 public static class ProtocolErrorCodes
 {
     public const string ProtocolMismatch = "ProtocolMismatch";
+    public const string NotInitialized = "NotInitialized";
+    public const string InvalidParameters = "InvalidParameters";
+    public const string InvalidInstallation = "InvalidInstallation";
+    public const string UnknownBackend = "UnknownBackend";
+    public const string UnknownModel = "UnknownModel";
+    public const string UnsupportedOption = "UnsupportedOption";
+    public const string DuplicateJob = "DuplicateJob";
+    public const string UnknownJob = "UnknownJob";
+    public const string QueueFull = "QueueFull";
+    public const string InvalidInput = "InvalidInput";
+    public const string InvalidOutput = "InvalidOutput";
+    public const string EngineFailed = "EngineFailed";
+    public const string JobTimedOut = "JobTimedOut";
+    public const string OutputPublishFailed = "OutputPublishFailed";
     public const string BackendPortInUse = "BackendPortInUse";
     public const string BackendStartFailed = "BackendStartFailed";
     public const string EngineOptionNotApplied = "EngineOptionNotApplied";
